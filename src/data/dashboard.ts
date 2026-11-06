@@ -1,0 +1,70 @@
+import type { Task } from '@/types';
+
+export const DAILY_CALL_TARGET = 50;
+
+export const tasks: Task[] = [
+  {
+    id: 'T-001',
+    title: 'Review 4 high-priority leads',
+    type: 'leads',
+    due: 'Today',
+    priority: 'high',
+    done: false,
+    leadIds: ['L-001', 'L-005', 'L-009', 'L-012'],
+    meta: '4 leads',
+  },
+  {
+    id: 'T-002',
+    title: 'Call Marcus Bennett — enterprise pilot',
+    type: 'call',
+    due: 'Today',
+    priority: 'high',
+    done: false,
+    leadIds: ['L-005'],
+    meta: '$120k at stake',
+  },
+  {
+    id: 'T-003',
+    title: 'Send pilot proposal to Northwind',
+    type: 'follow-up',
+    due: 'Today',
+    priority: 'high',
+    done: false,
+    leadIds: ['L-001'],
+  },
+  {
+    id: 'T-004',
+    title: 'Return 3 missed incoming calls',
+    type: 'call',
+    due: 'Today',
+    priority: 'medium',
+    done: false,
+    meta: '3 missed',
+  },
+  {
+    id: 'T-005',
+    title: 'Review call with Rahul Desai',
+    type: 'review',
+    due: 'Tomorrow',
+    priority: 'medium',
+    done: false,
+    leadIds: ['L-009'],
+  },
+  {
+    id: 'T-006',
+    title: 'Practice pitch with AvaniBot',
+    type: 'follow-up',
+    due: 'Tomorrow',
+    priority: 'low',
+    done: true,
+  },
+  {
+    id: 'T-007',
+    title: 'Follow up with Cobalt Retail on procurement',
+    type: 'follow-up',
+    due: 'Oct 21',
+    priority: 'medium',
+    done: false,
+    leadIds: ['L-002'],
+  },
+];
